@@ -192,5 +192,6 @@ if __name__=='__main__':
     loadSettings(sys.argv[1] if len(sys.argv) > 1 else '/settings.yaml')
     app.run(debug=True, host='0.0.0.0')
 else:
+    logging.basicConfig(level=logging.DEBUG)
     loadSettings('/settings.yaml')
 
